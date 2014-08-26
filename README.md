@@ -26,7 +26,9 @@ Any setting specified here overrides the respective setting defined in `settings
 
 ## Examples
 
+## Run everything
 
+    python examples/play_game.py
 
 ### Game creation
 
