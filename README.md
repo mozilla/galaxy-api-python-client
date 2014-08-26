@@ -30,16 +30,16 @@ Any setting specified here overrides the respective setting defined in `settings
 
 ### Game creation
 
-    python examples/create-game.py
+    python examples/create_game.py
 
 ### User creation
 
-    python examples/create-user.py
+    python examples/create_user.py
 
 ### Leaderboard creation
 
-    python examples/create-game.py
+    python examples/create_game.py
 
 ### Leaderboard score creation
 
-    python examples/create-game.py
+    python examples/create_game.py
