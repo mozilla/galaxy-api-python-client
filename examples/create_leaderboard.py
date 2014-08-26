@@ -16,5 +16,5 @@ def make_request(data=None):
     return requests.post(settings.API_URL + '/games/pokemon/leaderboards', data)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     make_request()

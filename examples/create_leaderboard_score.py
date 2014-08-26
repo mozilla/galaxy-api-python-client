@@ -16,5 +16,5 @@ def make_request(data=None):
        '/games/pokemon/leaderboards/pokeballs-collected/scores', data)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     make_request()
