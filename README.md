@@ -38,8 +38,8 @@ Any setting specified here overrides the respective setting defined in `settings
 
 ### Leaderboard creation
 
-    python examples/create_game.py
+    python examples/create_leaderboard.py
 
 ### Leaderboard score creation
 
-    python examples/create_game.py
+    python examples/create_leaderboard_score.py

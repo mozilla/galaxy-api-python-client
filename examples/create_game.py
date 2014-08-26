@@ -17,12 +17,15 @@ game = {
                    u'your own using the level editor.'
 }
 
+data = json.dumps(game, indent=2)
 
-req  = requests.post(settings.API_URL + '/games',
-                     json.dumps(game, indent=2))
+req  = requests.post(settings.API_URL + '/games', data)
 
-print 'Status code:'
+print 'Request body:'
+print data
+print
+print 'Response status code:'
 print req.status_code
 print
-print 'Response:'
+print 'Response body:'
 print json.dumps(json.loads(req.content), indent=2)

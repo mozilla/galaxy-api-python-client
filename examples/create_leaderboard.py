@@ -12,12 +12,15 @@ game = {
     'description': u'This keeps track of how many pokéballs a user finds.'
 }
 
+data = json.dumps(game, indent=2)
 
-req  = requests.post(settings.API_URL + '/games/pokemon/leaderboards',
-                     json.dumps(game, indent=2))
+req  = requests.post(settings.API_URL + '/games/pokemon/leaderboards', data)
 
-print 'Status code:'
+print 'Request body:'
+print data
+print
+print 'Response status code:'
 print req.status_code
 print
-print 'Response:'
+print 'Response body:'
 print json.dumps(json.loads(req.content), indent=2)
