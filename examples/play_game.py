@@ -38,9 +38,41 @@ print_divider()
 
 print_request(create_leaderboard.make_request())
 
-print_divider()
+scores = [
+    {
+        'user': 'bill',
+        'score': 39
+    },
+    {
+        'user': 'cvan',
+        'score': 50
+    },
+    {
+        'user': 'david',
+        'score': 72
+    },
+    {
+        'user': 'toby',
+        'score': 84
+    },
+    {
+        'user': 'mark',
+        'score': 99
+    },
+    {
+        'user': 'rick',
+        'score': 101
+    },
+    {
+        'user': 'wil',
+        'score': 4
+    }
+]
 
-print_request(create_leaderboard_score.make_request())
+for score in scores:
+    print_divider()
+
+    print_request(create_leaderboard_score.make_request(score))
 
 print_divider()
 
