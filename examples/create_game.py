@@ -10,7 +10,7 @@ def make_request(data=None):
     data = json.dumps(data or {
         'name': u'Pokémon',
         'slug': u'pokemon',
-        'app_url': u'http://www.fullscreenpokemon.com/',
+        'game_url': u'http://www.fullscreenpokemon.com/',
         'description': u'Full Screen Pokemon is an open source HTML5 remake of '
                        u'the original Pokemon games. You can play the original '
                        u'two generations (Red/Blue through Crystal), literally '
